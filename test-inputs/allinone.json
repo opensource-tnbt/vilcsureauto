@@ -1,0 +1,236 @@
+{
+  "traffic_test": {
+    "frame_sizes": [
+      {
+        "fixed_frame_length": 1024,
+        "type": "FIXED"
+      },
+      {
+        "fixed_frame_length": 64,
+        "type": "FIXED"
+      },
+      {
+        "fixed_frame_length": 128,
+        "type": "FIXED"
+      },
+      {
+        "fixed_frame_length": 256,
+        "type": "FIXED"
+      },
+      {
+        "fixed_frame_length": 512,
+        "type": "FIXED"
+      },
+      {
+        "fixed_frame_length": 1280,
+        "type": "FIXED"
+      },
+      {
+        "fixed_frame_length": 1518,
+        "type": "FIXED"
+      },
+      {
+        "fixed_frame_length": 9000,
+        "type": "FIXED"
+      }
+    ]
+  },
+  "stcv_port_config": {
+    "benchmark": true,
+    "driver": "SOCKET",
+    "ntp_server": "",
+    "speed": "25G"
+  },
+  "test_params": {
+    "compute": {
+      "agent_load_success_threshold": 100,
+      "cpu_load": 50,
+      "enable_load_threshold": false,
+      "min_load": 0,
+      "duration_s": 10,
+      "loop_count": 2
+    },
+    "memory": {
+      "buffer_size": 33554432,
+      "write_rate": 1000,
+      "max_write_latency": 0,
+      "enable_write_rate_threshold": false,
+      "read_rate": 1000,
+      "agent_write_rate_success_threshold": 100,
+      "min_write_rate": 0,
+      "enable_write_latency_threshold": false,
+      "max_read_latency": 0,
+      "write_block_size": 4096,
+      "agent_write_latency_success_threshold": 100,
+      "access_pattern": "RANDOM",
+      "enable_read_rate_threshold": false,
+      "min_read_rate": 0,
+      "read_block_size": 4096,
+      "enable_read_latency_threshold": false,
+      "agent_read_rate_success_threshold": 100,
+      "agent_read_latency_success_threshold": 100,
+      "access_patterns": [
+        "RANDOM"
+      ],
+      "block_sizes_bytes": [
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "duration_s": 10,
+      "max_buffer_size_bytes": 4294967296,
+      "read_write_modes": [
+        "READWRITE"
+      ],
+      "read_write_rate": 10000000
+    },
+    "storage": {
+      "write_rate": 1000,
+      "max_write_latency": 0,
+      "file_size": 128,
+      "vdev_path": "vblk0.3",
+      "enable_file_size": false,
+      "enable_write_rate_threshold": false,
+      "read_rate": 1000,
+      "agent_write_rate_success_threshold": 100,
+      "min_write_rate": 0,
+      "enable_write_latency_threshold": false,
+      "max_read_latency": 0,
+      "write_block_size": 4096,
+      "agent_write_latency_success_threshold": 100,
+      "queue_depth": 32,
+      "access_pattern": "RANDOM",
+      "enable_read_rate_threshold": false,
+      "min_read_rate": 0,
+      "read_block_size": 4096,
+      "enable_read_latency_threshold": false,
+      "agent_read_rate_success_threshold": 100,
+      "agent_read_latency_success_threshold": 100
+    },
+    "block_io": {
+      "access_patterns": [
+        "RANDOM",
+        "SEQUENTIAL"
+      ],
+      "block_sizes_bytes": [
+        4096,
+        8192,
+        16384
+      ],
+      "duration_s": 10,
+      "file_sizes_bytes": [
+        1048576
+      ],
+      "queue_depths": [
+        64
+      ],
+      "read_write_modes": [
+        "READWRITE",
+        "READ",
+        "WRITE"
+      ],
+      "read_write_rate": 10000000,
+      "vdev_path": "vblk0.3"
+    },
+    "params": {
+      "disk_over_commit": true,
+      "volume_num": 1,
+      "vcpus": 2,
+      "swap_mb": 512,
+      "console_type": "novnc",
+      "from_image_name": "test_rhel7_with_password",
+      "rxtx_factor": 1,
+      "to_flavor_name": "for-performance-testing",
+      "network_id": "d1243e22-6ad5-4271-a6fa-bcd57b428533",
+      "flavor_name": "for-performance-testing",
+      "internal_network_id": "30805653-5803-4299-a53c-b0113d48e5c6",
+      "image_name": "test_rhel7_with_password",
+      "availability_zone": "gifw_zone",
+      "max_sleep_s": 30,
+      "policies": [
+        "affinity"
+      ],
+      "server_count": 1,
+      "to_image_name": "test_rhel7_with_password",
+      "volume_size_gb": 10,
+      "ram_mb": 2048,
+      "subnet_cidr_start": "172.172.172.0/26",
+      "flavor_id": "f92c9ad5-ad36-49ed-9ac5-27ddd51d841b",
+      "block_migration": true,
+      "ephemeral_gb": 0,
+      "disk_gb": 1,
+      "min_sleep_s": 3,
+      "volume_type": "rbd1",
+      "image_id": "2c130fe4-e8b7-49b1-91ce-f4fe8ee69468"
+    },
+    "test_set": "NOVA"
+  },
+  "vim": {
+    "deployment_spec_index_list": [
+      1
+    ],
+    "enable_async_ops": true,
+    "enable_cleanup": true,
+    "enable_sriov": true,
+    "location_list": [
+      {
+        "instance_count": 2,
+        "location": "gifw_zone:invimh01pnj1er-cmp-13.vil.in"
+      }
+    ],
+    "server_instance_ids": [],
+    "vim_profile": {
+      "description": "",
+      "name": "EPC_GOA (copy)",
+      "provider": {
+        "project_domain_name": "Default",
+        "project_name": "admin",
+        "identity_api_version": 3,
+        "user_domain_name": "Default",
+        "region": "INVIMH01PNJ1",
+        "username": "admin",
+        "auth_url": "https://10.95.195.5:13000//v3",
+        "type": "OPENSTACK",
+        "mgmt_subnet": "for-performance-testing-subnet",
+        "password": "VilIdea@123",
+        "deployment_specs": [
+          {
+            "create_volume": false,
+            "flavour": "for-performance-testing",
+            "image": "cloudstress",
+            "image_type": "CLOUDSTRESS",
+            "name": "cstress_agent",
+            "volume_size_gb": 1
+          },
+          {
+            "create_volume": false,
+            "flavour": "for-performance-testing",
+            "image": "stcv",
+            "image_type": "STCV",
+            "name": "stcv",
+            "volume_size_gb": 1
+          },
+          {
+            "create_volume": false,
+            "flavour": "for-performance-testing",
+            "image": "test_rhel7_with_password",
+            "image_type": "CUSTOM",
+            "name": "rhel",
+            "volume_size_gb": 1
+          }
+        ],
+        "mgmt_net": "for-performance-testing"
+      },
+      "timeouts": {
+        "compute_allocate_timeout": 300,
+        "compute_operate_timeout": 300,
+        "compute_terminate_timeout": 300,
+        "poll_interval": 5
+      }
+    },
+    "vim_type": "OPENSTACK"
+  },
+  "vm_count": 1
+}

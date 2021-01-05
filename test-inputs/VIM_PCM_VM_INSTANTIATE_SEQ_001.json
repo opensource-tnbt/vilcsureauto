@@ -1,0 +1,65 @@
+{
+  "debug": {
+    "lab_server_addr": "localhost"
+  },
+  "ping_count": 10,
+  "trial_count": 1,
+  "vim": {
+    "deployment_spec_index_list": [
+      2
+    ],
+    "location": "gifw_zone:invimh01pnj1er-cmp-13.vil.in",
+    "test_network_ids": [],
+    "vim_profile": {
+      "description": "",
+      "name": "EPC_GOA (copy)",
+      "provider": {
+        "project_domain_name": "Default",
+        "project_name": "admin",
+        "identity_api_version": 3,
+        "user_domain_name": "Default",
+        "region": "INVIMH01PNJ1",
+        "username": "admin",
+        "auth_url": "https://10.95.195.5:13000//v3",
+        "type": "OPENSTACK",
+        "mgmt_subnet": "Fortinet-OAMFW-OM-Network-1622_subnet",
+        "password": "VilIdea@123",
+        "deployment_specs": [
+          {
+            "create_volume": false,
+            "flavour": "for-performace-testing",
+            "image": "osv",
+            "image_type": "CLOUDSTRESS",
+            "name": "cstrees_agent",
+            "volume_size_gb": 1
+          },
+          {
+            "create_volume": false,
+            "flavour": "for-performace-testing",
+            "image": "stcv",
+            "image_type": "STCV",
+            "name": "stcv",
+            "volume_size_gb": 1
+          },
+          {
+            "create_volume": false,
+            "flavour": "for-performace-testing",
+            "image": "test_rhel7_with_password",
+            "image_type": "CUSTOM",
+            "name": "rhel",
+            "volume_size_gb": 1
+          }
+        ],
+        "mgmt_net": "Fortinet-OAMFW-OM-Network-1622"
+      },
+      "timeouts": {
+        "compute_allocate_timeout": 300,
+        "compute_operate_timeout": 300,
+        "compute_terminate_timeout": 300,
+        "poll_interval": 5
+      }
+    },
+    "vim_type": "OPENSTACK"
+  },
+  "vm_count": 1
+}

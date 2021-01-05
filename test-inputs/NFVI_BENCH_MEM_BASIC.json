@@ -1,0 +1,107 @@
+{
+  "cs_agent_config": {
+    "ntp_server": ""
+  },
+  "debug": {
+    "cs_app_addr": "",
+    "result_server_url": ""
+  },
+  "instantiation_type": "VIM",
+  "license_server": {
+    "entitlement": "eyJpZCI6IjU3NzBmZWM4NTYwNjRkMGI5NWY3YjNlYjVlMmIxMmVlIiwiZGV0YWlscyI6IntcInNjaGVtYV91cmxcIjpcImh0dHBzOi8vdGVtZXZhLmNvbS9hcGkvbGljL3NjaGVtYS92MS9lbnRpdGxlbWVudC1kZXRhaWxzLmpzb25cIixcIm9yZ2FuaXphdGlvbl9pZFwiOlwiMjVjODVjY2I2ZGIwNGI2YjgyZTFmOWJlMTg2NWI4YTZcIixcIm9yZ2FuaXphdGlvbl9uYW1lXCI6XCJWb2RhZm9uZSBJZGVhIExpbWl0ZWRcIixcInVzZXJfaWRcIjpcImY3ZjViZDA0OGE5MTQ3MDY5MmUyNDdmZjg3YjNmYWE1XCIsXCJhcHBsaWNhdGlvbl9pZFwiOlwiZTM2M2Y2YzljM2EwNDY3ZWFlMzFmMjRhOTlmZjIwNDRcIixcImFwcGxpY2F0aW9uX25hbWVcIjpcIkNsb3VkU3VyZVwiLFwibGljZW5zZV9pZFwiOlwiQ1NVIEJhc2UgTFwiLFwibGljZW5zZV92ZXJzaW9uXCI6XCIxLjBcIixcImxpY2Vuc2VfdHlwZVwiOlwic29mdHdhcmVcIixcImNyZWF0aW9uX2RhdGVcIjpcIjIwMjAtMDgtMjZUMDE6MDg6MTIuNjcyMTg4MDlaXCIsXCJhY3RpdmF0aW9uX2RhdGVcIjpcIjIwMjAtMDgtMjZUMDA6MDA6MDBaXCIsXCJleHBpcmF0aW9uX2RhdGVcIjpcIjIwMjEtMDItMjNUMDA6MDA6MDBaXCIsXCJtYXhfY29uY3VycmVuY3lcIjo1LFwibGltaXRcIjpcImhhcmRcIixcInRlbWV2YV9pZFwiOlwiZTMwZjA0NDA4ZDJiNDliNGEwYzYwNTI5MDVlYWQ4N2FcIixcImNvbmN1cnJlbnRfaG9zdF9saW1pdFwiOjEsXCJob3N0X2lkXCI6XCJhNDgxMTIyMDE4MDVkZGZjNmIzZjE2YTFmOWM4MGYzYmE1N2RjYjAyXCIsXCJob3N0ZWRfZGF0ZVwiOlwiMjAyMC0wOC0yNlQwMTowOTowNi4zNDkyNzQxNTlaXCIsXCJmZWF0dXJlc1wiOltdfSIsImhhc2hfYWxnb3JpdGhtIjoic2hhMzg0Iiwic2lnbmF0dXJlIjoiWCt2MlZQQ2xJRkg3Tm9leHVnT3grVVI3ZW16RVB2dzdaeElmcWhtMVVPRVdxTGtNVDlQM2Z3YTVyNEdRKzk2b3dWRGZ6d3d0SEpOWGV6dmRWUEplbE50RmNEK0hNQ3dPSVR0SXBlYTFGcmx6Z3VjNHI3b2praEt2Q3RjenFZK3E4RlNaMWlUeUcydkI4dFNlR3dHYTNKQkc3cGNVMStNUWxTdk12eFhpYkxJVi9reE5QM0V3YmE3TnFwS1JLZFdkR09FWXY3ckw5QnhIMDVXWmZEZkI4NGk2K0R3TE9LcEFjK0hSa1p4L3VQSnMwby9hSmlWemMxUXd4OHNWenU5ako2bXFTWXNQUDdPM0xYc0JHeHljN1NCWmZENHZTZVNwaHg0VWZmZ1JVdGt1KzM3L1k5NXNTL2RtNGgvaEpzVmx4NTQrUDlTUmFwYTZQVUgyWUNhc2liQTl2NmNjci9PUlhhcTFrUUtmR3hPSkk0YUlNcW1YeW9pTHRlNVhBdzJtY0ZuRFYxU0ZMRkE3dEJrQUs1UnJXUXhoay9tcG5ha1pkZm9TNjV6b01wL25UdGdtSVpxbTlKc3FISzY4VUlTZ0hTaThqZlJYSWNqODNodVZMVTJidGZkV2V3MGhqZUorYzk2VVVLOXRaV1kzZlNIOWdEZ3JZOG91aTloUzRlSExKRnZDWWw3amJSdDdUWnU3Wk5yUnQwaTZqQUU1bUY0Y2o4SEMvZDFwZ1VjWGxNYUZFcS9KR3J3ZFBIRVJQRWZOLzhUNTlTNkluZEdMOGdMUS9rcDcyZS9jMXFjQjBqSVp2SkdRbFFQdmFGT2lzbGZEYVRBQmtSNnh6d2ZTNEFYdEdWUnpzQkM4WXdZU240K0tyVUk3alhqNU52WGR5dy9qTHcwdVZBM2tjNGs9IiwiY3VycmVudF91c2FnZSI6bnVsbCwid29ya3NwYWNlcyI6W3siaWQiOiIyNWM4NWNjYjZkYjA0YjZiODJlMWY5YmUxODY1YjhhNiIsInByaW9yaXR5IjoxfV0sImNlcnRpZmljYXRlIjoiLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tXG5NSUlGa0RDQ0EzaWdBd0lCQWdJQkFqQU5CZ2txaGtpRzl3MEJBUXNGQURBdk1TMHdLd1lEVlFRREV5UlRjR2x5XG5aVzUwSUZSbGJXVjJZU0JEWlhKMGFXWnBZMkYwWlNCQmRYUm9iM0pwZEhrd0hoY05NVGN3TVRFeU1qSXhPRFU0XG5XaGNOTWpjd01URXdNakl4T0RVNFdqQVpNUmN3RlFZRFZRUUREQTUzZDNjdWRHVnRaWFpoTG1OdmJUQ0NBaUl3XG5EUVlKS29aSWh2Y05BUUVCQlFBRGdnSVBBRENDQWdvQ2dnSUJBTGozWXcvTE94T2g1QjVlQTBZRWpaWDN1Z1ZVXG41ZFFKL0pMMU5OY2w2M0QvcDh0bkJDMUJUUDVkZTd1K1FqN2ovMS9JbHJicEl2bVpvakpibFN6eXdwVkdDY1kvXG5MQ0Z5LzZsUU5XUXFEQ3VGaTRUTXZueUxJOWxVWXMyb2VTYVhNNUxPaHFWcDZTTHRXeDFJN1hBL3k1a3ZqZXFqXG5Od2dkYkkzY3RzZEpvMzBFNHZQaGFUWEFSamlSb1pqbHdIV3MzUmJudXozdXMyMEg5M0dyMXE0cnZpZWpoaTVzXG5TMHFSQjJkRlp2QlBGK1N2ZytWRUdqREhxcFRpbDlTZjIwNlUrMlZ4SW0vczJiM0FMblFxQytQNmpEWW94RzZJXG5DQ2hWYkpqbzJFbXV6RktHWndxU0k4Ujg2bnZueE5HR0FmMDNMYTZGakVRSU5FUVFKNHVTcGkvT05VYjBWQjNBXG5pQXoyWnVsWUFaemdPVUsxTGJOcDVUVkUxRmlMRnY2ZklWekZ2cytOdStGUmZVb0IxQTBJZlplYStMOE1tSCtMXG5YTk9rZ1lTYS83MUtBMjJCYi9OeVVyTlJQa0Fia1M2Q1hMN0hTUnd2NDdzNGhwYlNrNHNQeTZOZ1RZNGxjWUFVXG5lejBxQ21ucmZsdERIRy9RMEZoemlrN0V1QXpIQ2pYNDA2K3NQaTBjSWZVbGF2YmM3U3Nvd21LcmtRMktDaitHXG5OWW5reFl2eWtUc1RtS0d4Z1FrN2YzN2JFdHFRVEcvQTdaT1U5QmFEZUUzMmpWR213bFFTOC9EeWVYdUs5bkx5XG5Tc01GbDF6VStDbkpBTUVDK0VKMzd4TlI5Sit5SERYS3h2YlRaU3dvdXJWa2ROSE05aG8yVUlPWW1xb25WR1lFXG55amJ2blZuUTNMNVpNU24xQWdNQkFBR2pnY3d3Z2Nrd0x3WURWUjBmQkNnd0pqQWtvQ0tnSUlZZWFIUjBjSE02XG5MeTkwWlcxbGRtRXVZMjl0TDJGd2FTOXNhV012WTNKc01Ba0dBMVVkRXdRQ01BQXdIUVlEVlIwT0JCWUVGS2g1XG5jckdaT0ozM2JBS0pWUzgyVXdtbEF5dGlNRjhHQTFVZEl3UllNRmFBRkJlNnIybGoyaDM1dncrS0pGYzN5eFpyXG5VL2VDb1RPa01UQXZNUzB3S3dZRFZRUURFeVJUY0dseVpXNTBJRlJsYldWMllTQkRaWEowYVdacFkyRjBaU0JCXG5kWFJvYjNKcGRIbUNDUUNYMjY1MExIVFUwakFMQmdOVkhROEVCQU1DQjRBd0RRWUpLb1pJaHZjTkFRRUxCUUFEXG5nZ0lCQUpDU1RwcmZhZFdGUDBuZWd5M3ZLUk9KcjRCU054WUZ3dkxvK09Fc0RRMVJnNzFpS2JkZGNpMW14NUxSXG4vcmZLSVZ3dGVEcWR0dVdrRTZFcEZlY1IrQmtSOVg5NFpjaG5yNERhVWJiL2VCZndzVkU0eWV1MEN4cmJTSUxsXG54blVNVUxKQTlMMmMrQmJPZmFzbEpDdjU3cWU4UUNiZG9DaDVJcWsrc0FhRGQya1QxVnFTcnE3VDFaYWFDNnk2XG5Mck94NTRqbTI1dzBqeXRYVmlqSzVTeUdzWG5mZTBzWTRBaWxMOE4vNTV2cFZHR3p3TFAwTlY3NUtjVk82UFJrXG52bWsxOE5VLzYyOGxVMFpBb29WYUViZGRJRWFBWFdKRlFHZlFhMkdocE5GZWU5NjhGZGNSOVRwK0Y2a3hYRTZMXG5tdWdyOXQ5eFJteDRXZS8zaEdscnYxckFBenBlTGw3dC9NaCtsajVKYUdWRFFna1l2THEvNEwvUWcwNFNUUUw1XG5qWEhnUVhYczhnODFUeTAvbjRUMkVMTzRlTVhNQTArSUxTalFjYVl3RVEzdFVHNTY5L29Rd1RXTnBIaFRlRy9kXG5uK2dJOGQ0WEo5czJUQzUxMHowbmM0ODl6R3FyckJRQ282dHgvSExhbU5FbmhKcDMwU2tkR0NSdHdVSE1FbHdlXG5weUdWUFBuVkFGaDFpWkJnU2lWRmoycWcrcVp5V3dMdXRKZ0kyTnlFMjBhS3RKMmZISWJXRjlqSjdCeDFNS3RJXG5hTGJObXJJbkN3UTRQQytscitURHZHdDg3WDZXU1k2bllXZm9tbTVIODUyZCtETHBRRWF3aFE5andZbzRNZWUvXG5WQ0FnOVdobXBFaHNvbmV2eUlyRFRweWxMRXdvbGIweVU4bkpYWEdGbmYxaCtJVkRcbi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS1cbiIsImRpc2FibGVkIjpmYWxzZSwiaG9zdGVkIjpmYWxzZSwiaG9zdGVkX2VudGl0bGVtZW50cyI6W10sInN1aXRlX21lbWJlciI6ZmFsc2V9"
+  },
+  "test_params": {
+    "memory": {
+      "access_patterns": [
+        "RANDOM"
+      ],
+      "block_sizes_bytes": [
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "duration_s": 10,
+      "max_buffer_size_bytes": 4294967296,
+      "read_write_modes": [
+        "READWRITE"
+      ],
+      "read_write_rate": 10000000
+    },
+    "timeouts": {
+      "results_query_timeout": 60,
+      "config_load_timeout": 0,
+      "clear_results_timeout": 60,
+      "release_agents_timeout": 60,
+      "start_agents_timeout": 0,
+      "stop_agents_timeout": 60,
+      "reserve_agents_timeout": 0,
+      "agent_discovery_timeout": 60,
+      "config_results_timeout": 60
+    }
+  },
+  "vim": {
+    "deployment_spec_index_list": [
+      0
+    ],
+    "enable_async_ops": true,
+    "enable_cleanup": true,
+    "location_list": [
+      {
+        "instance_count": 1,
+        "location": "gifw_zone:invimh01pnj1er-cmp-13.vil.in"
+      }
+    ],
+    "server_instance_ids": [],
+    "vim_profile": {
+      "description": "",
+      "name": "EPC_GOA (copy)",
+      "provider": {
+        "project_domain_name": "Default",
+        "project_name": "admin",
+        "identity_api_version": 3,
+        "user_domain_name": "Default",
+        "region": "INVIMH01PNJ1",
+        "username": "admin",
+        "auth_url": "https://10.95.195.5:13000//v3",
+        "type": "OPENSTACK",
+        "mgmt_subnet": "vip_vm-dpdk_test_net_subnet-43mnyb5oexya",
+        "password": "VilIdea@123",
+        "deployment_specs": [
+          {
+            "create_volume": false,
+            "flavour": "for-performance-testing",
+            "image": "cloudstress",
+            "image_type": "CLOUDSTRESS",
+            "name": "cstress_agent",
+            "volume_size_gb": 1
+          },
+          {
+            "create_volume": false,
+            "flavour": "for-performance-testing",
+            "image": "stcv",
+            "image_type": "STCV",
+            "name": "stcv",
+            "volume_size_gb": 1
+          },
+          {
+            "create_volume": false,
+            "flavour": "for-performance-testing",
+            "image": "test_rhel7_with_password",
+            "image_type": "CUSTOM",
+            "name": "rhel",
+            "volume_size_gb": 1
+          }
+        ],
+        "mgmt_net": "dpdk_test_vm_om_net"
+      },
+      "timeouts": {
+        "compute_allocate_timeout": 300,
+        "compute_operate_timeout": 300,
+        "compute_terminate_timeout": 300,
+        "poll_interval": 5
+      }
+    }
+  }
+}

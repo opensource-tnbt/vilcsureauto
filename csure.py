@@ -169,11 +169,19 @@ def create_project(testcase_templates, project_name, cleanup):
     except ApiException as apie:
         raise RuntimeError("Exception when calling ProjectsApi->create_project: %s\n" % apie)
 
+    input_dir = settings.getValue('TEST_INPUT_DIR')
     # Create test cases under the project
     try:
         for tmpl in testcase_templates:
+            filename = tmpl.split('.')[1] + '.json'
+            inputfile = os.path.join(input_dir, filename)
+            if os.path.exists(inputfile):
+                with open(input_path) as inpf:
+                    tc_input = json.load(inpf)
+            else:
+                tc_input={}
+                print("Something is wrong")
             testcase_name = tmpl.replace('_', ' ').title()
-            tc_input = {}  # this is where you'd provide valid test case input
             testcase_body = Testcase(name=testcase_name,
                                      project_id=project.id,
                                      testcase_template_id=tmpl,
@@ -306,8 +314,15 @@ def main():
 
     # Perform Sanity Checks.
 
-
-    # Start Tests
+    # Create Project.
+    configuration.host = 'http://{}/api'.format(
+        settings.getValue('CSURE_APPVM_IP'))
+    configuration.access_token = settings.getValue('ACCESS_TOKEN')
+    project = create_project(settings.getValue('TEMPLATES'),
+                             settings.getValue('PROJECT_NAME'),
+                             settings.getValue('CLEANUP'))
+    # Run Tests
+    run_test(None, None, project.id, 30)
 
 if __name__ == "__main__":
     main()
